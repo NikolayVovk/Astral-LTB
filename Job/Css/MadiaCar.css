@@ -1,0 +1,318 @@
+@media screen and (max-width: 1600px) {
+  .career{
+    height: 160vh;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .nav{
+    width: 400px;
+  }
+
+  .point{
+    font-size: 12px;
+    margin: 4px;
+  }
+  .text_on_main{
+      width: 80%;
+      font-size: 12px;
+      text-align: center;
+      margin: 0 auto;
+  }
+
+  .text_on_main h1{
+    font-size: 40px;
+    margin-left:0%;
+  }
+
+/*Карера*/
+
+/*Секция каьера начало*/
+
+.career{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 145vh;
+  width: 100%;
+  padding: 6%;
+}
+
+.job_title{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.job_stitle{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.form_title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/*Секция каьера конец*/
+  /*Футер*/
+
+  .footer{
+    height: 38vh;
+    padding: 20px;
+  }
+
+  .Footer_main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  }
+
+  .Footer_block{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 868px) {
+
+/*Мобильное меню*/
+
+.header{
+  display: none;
+}
+
+.header.scrolling{
+  display: none;
+}
+
+.mobile_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 30px;
+    position: fixed;
+    right:0;
+    top: 103%;
+    margin-right: 25px;
+    z-index: 1000;
+    transition: all 0.7s ease;
+    filter: invert(100%);
+  }
+
+  .strip{
+    background: #000;
+    height: 15%;
+    width: 100%;
+    border-radius: 50px;
+  }
+
+  .mobile{
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background: #fff;
+    z-index: 100;
+    transition: all 0.7s ease;
+    transform: translateY(-100%);
+  }
+
+  .mobile a {
+    color: #000;
+    transition: all 0.7s ease;
+  }
+
+
+  .mobile .social{
+    filter: invert(0%);
+    transition: all 0.7s ease;
+  }
+
+  .m_logo{
+    width: 180px;
+    height: 15%;
+    background: url(../Img/M_logo.jpg) no-repeat center;
+    background-size:cover;
+    transition: all 0.7s ease;
+  }
+
+  .m_nav{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 500px;
+    height: 35%;
+    font-weight: bold;
+  }
+
+  .m_point{
+    font-weight: black;
+    font-size: 35px;
+    margin: 15px;
+    transition: all 0.7s ease;
+  }
+
+  .m_social{
+    width: 660px;
+    text-align: center;}
+
+  .m_social img{
+    width: 25px;
+    margin: 5%;
+  }
+
+/*Мобильное меню конец*/
+
+.career{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 200vh;
+  width: 100%;
+  padding: 6%;
+}
+
+.job_about{
+  width: 80%;
+  font-size: 14px;
+}
+
+.contact{
+  width: 80%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #303133;
+}
+
+.footer h3 {font-size: 18px;}
+.footer p {font-size: 13px;}
+
+}
+@media screen and (max-width: 656px) {
+
+  .point{
+    font-weight: black;
+    font-size: 35px;
+    margin: 15px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .text_on_main{
+      width: 90%;
+      font-size: 12px;
+      text-align: center;
+}
+
+.home_page{
+  height: 45vh;
+}
+
+.text_on_main h1{
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/*Секция каьера*/
+
+.career{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 220vh;
+  width: 100%;
+  padding: 6%;
+}
+
+.job_about{
+  width: 80%;
+  font-size: 14px;
+  color: #303133;
+  font-weight: 400;
+  justify-content: flex-start;
+}
+
+.form_input{
+  height: 40px;
+  width: 100%;
+}
+
+.form_buttom{
+  height: 50px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contact{
+  width: 80%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #303133;
+}
+
+/*Секция каьера конец*/
+
+  /*Футер*/
+
+  .footer{
+    height: 72vh;
+    padding: 20px;
+    margin-top: 5%;
+  }
+
+  .Footer_main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .Footer_block{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .career{
+    height: 240vh;
+  }
+  .footer{
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .career{
+    height: 270vh;
+  }
+}

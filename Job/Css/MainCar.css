@@ -1,0 +1,329 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+a,li,ul{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+}
+
+.header{
+  margin: 0 auto;
+  height: 8%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: none;
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+
+.header a {
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.header .social{
+  filter: invert(100%);
+  transition: all 0.5s ease;
+}
+
+.up{
+  position: absolute;
+  bottom:-1100%;
+  right:4%;
+  background: #303133;
+  font-weight: bold;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  width: 160px;
+  height: 100%;
+  background: url(../Img/LogoScroll.png) no-repeat center;
+  background-size:cover;
+  transition: all 0.5s ease;
+}
+
+.nav{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  font-weight: bold;
+  height: 100%;
+}
+
+.point{
+  font-weight: black;
+  font-size: 14px;
+  margin: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+.point:hover{
+  color: #81D742;
+}
+
+.social{
+  width: 160px;
+  text-align: center;}
+
+.social img{
+  width: 15px;
+  margin: 5%;
+}
+
+/*Мобильное меню*/
+
+.mobile{
+  margin: 0 auto;
+  height: 8%;
+  width: 100%;
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 100;
+  box-shadow: 20px 5px 40px 6px rgba(0,0,0,0.06);
+}
+
+
+.mobile_menu{
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30%;
+  width: 30px;
+}
+
+.strip{
+  background: #000;
+  height: 15%;
+  width: 100%;
+  border-radius: 50px;
+}
+
+/*scroll Js*/
+
+.header.scrolling {
+  background: rgba(255, 255, 255, 1);
+  margin: 0 auto;
+  height: 8%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  transition: all 0.5s ease;
+  box-shadow: 20px 5px 40px 6px rgba(0,0,0,0.06);
+}
+
+.scrolling .logo{
+  background: url(../Img/LogoUp.png) no-repeat center;
+  background-size:cover;
+  transition: all  0.5s ease;
+}
+
+.scrolling .point {
+  color: #000;
+  transition: all  0.5s ease;
+}
+
+.scrolling .social {
+  filter: none;
+  transition: all 0.5s ease;
+}
+
+.scrolling .mobile_menu{
+  filter: invert(100%);
+  transition: all  0.5s ease;
+}
+
+/*scroll Js end*/
+
+.home_page{
+  background: url(../Img/Background.jpg) center;
+  background-size:cover;
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.text_on_main{
+  color: #fff;
+  margin-top: 1%;
+  text-align: center;
+}
+
+.text_on_main h1{
+  font-weight: 700;
+  font-size: 50px;
+}
+
+/*Секция каьера начало*/
+
+.career{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 120vh;
+  width: 80%;
+  padding: 6%;
+  margin: auto;
+}
+
+.job_about{
+  width: 50%;
+  font-size: 14px;
+  color: #303133;
+  font-weight: 400;
+}
+
+.job_about p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.job_about ul li{
+  list-style-type: square;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all 1s ease;
+}
+
+.job_title{
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.job_stitle{
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contact{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #303133;
+}
+
+.form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.form_title{
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.form_input{
+  height: 40px;
+  width: 80%;
+  color: #757575;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 2%;
+  font-family: 'Montserrat', sans-serif;
+  border: solid 1px #EAEAEA;
+  transition: all 1s ease;
+}
+
+.form_input:active, :hover, :focus {
+    outline-color: #81D742;
+}
+
+.form p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: left;
+}
+
+#form_file{
+font-family: 'Montserrat', sans-serif;
+}
+
+.form_buttom{
+  height: 50px;
+  width: 120px;
+  color: #fff;
+  background: #81D742;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+.form_buttom:hover{
+  background: #fff;
+  border: 1px solid #81D742;
+  color: #81D742;
+}
+
+
+/*Секция каьера конец*/
+
+.footer{
+  background: #141618;
+  height: 250px;
+  padding-top: 40px;
+}
+
+.footer h3 {color: #fff;
+            font-size: 18px;}
+.footer p {color: #918F91;
+           font-size: 13px;}
+
+
+.Footer_main{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.Footer_block{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

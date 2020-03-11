@@ -1,0 +1,371 @@
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1300px) {
+  .nav{
+    width: 400px;
+  }
+
+  .point{
+    font-size: 12px;
+    margin: 4px;
+  }
+  .text_on_main{
+      width: 80%;
+      font-size: 12px;
+      text-align: center;
+      margin: 0 auto;
+  }
+
+  .text_on_main h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left:0%;
+  }
+
+/*Карера*/
+
+/*Секция каьера начало*/
+
+.career{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 160vh;
+  width: 100%;
+  padding: 6%;
+}
+
+.teamoffices{
+  width: 30%;
+  display: block;
+  font-size: 13px;
+  color: #303133;
+  height: 300px;
+  font-weight: 400;
+}
+
+.teamoffices h1{
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.office{
+  background: url(../Img/Background1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 100%;
+  margin-top: 6%;
+  border-radius: 10px;
+}
+
+.jobs{
+  width: 70%;
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(2,42%);
+  grid-template-rows: repeat(4,300px);
+  grid-gap: 6vh;
+  justify-content: flex-end;
+}
+
+.job_part{
+  opacity: 0.6;
+  transition: all 1s ease;
+}
+
+.job_part:hover{
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.job_part h1{
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #303133;
+}
+
+.job_part p{
+  font-weight: 400;
+  color: #969696;
+  font-size: 13px;
+}
+
+.job_part nav{
+  display: block;
+   width: 100%;
+   height: 1px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   background: #EAEAEA;
+}
+
+.job_part a{
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  transition: all 1s ease;
+  margin-left: -20px;
+}
+
+.job_part:hover a{
+  margin-left: 0px;
+  color: #303133;
+}
+
+
+
+/*Секция каьера конец*/
+
+
+
+  /*Футер*/
+
+  .footer{
+    height: 38vh;
+    padding: 20px;
+  }
+
+  .Footer_main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  }
+
+  .Footer_block{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 868px) {
+
+/*Мобильное меню*/
+
+.header{
+  display: none;
+}
+
+.header.scrolling{
+  display: none;
+}
+
+.mobile_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 30px;
+    position: fixed;
+    right:0;
+    top: 103%;
+    margin-right: 25px;
+    z-index: 1000;
+    transition: all 0.5s ease;
+    filter: invert(100%);
+    box-shadow: 20px 5px 40px 6px rgba(0,0,0,0.06);
+  }
+
+  .strip{
+    background: #000;
+    height: 15%;
+    width: 100%;
+    border-radius: 50px;
+  }
+
+  .mobile{
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background: #fff;
+    z-index: 100;
+    transition: all 0.5s ease;
+    transform: translateY(-100%);
+  }
+
+  .mobile a {
+    color: #000;
+    transition: all 0.5s ease;
+  }
+
+
+  .mobile .social{
+    filter: invert(0%);
+    transition: all 0.5s ease;
+  }
+
+  .m_logo{
+    width: 180px;
+    height: 15%;
+    background: url(../Img/M_logo.jpg) no-repeat center;
+    background-size:cover;
+    transition: all 0.5s ease;
+  }
+
+  .m_nav{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 500px;
+    height: 35%;
+    font-weight: bold;
+  }
+
+  .m_point{
+    font-weight: black;
+    font-size: 35px;
+    margin: 15px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .m_social{
+    width: 660px;
+    text-align: center;}
+
+  .m_social img{
+    width: 25px;
+    margin: 5%;
+  }
+
+/*Мобильное меню конец*/
+
+.career{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 220vh;
+  width: 100%;
+  padding: 6%;
+}
+
+.teamoffices{
+  width: 95%;
+  font-size: 14px;
+  height: 300px;
+  font-weight: 400;
+}
+
+.teamoffices h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.office{
+  height: 200px;
+}
+
+.jobs{
+  margin-top:20%;
+  width: 95%;
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(2,45%);
+  grid-template-rows: repeat(4,300px);
+  grid-gap: 12vh;
+  justify-content: center;
+}
+
+.footer h3 {font-size: 18px;}
+.footer p {font-size: 13px;}
+
+}
+
+@media screen and (max-width: 656px) {
+
+  .point{
+    font-weight: black;
+    font-size: 35px;
+    margin: 15px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .text_on_main{
+      width: 90%;
+      font-size: 12px;
+      text-align: center;
+}
+
+.home_page{
+  height: 45vh;
+}
+
+.text_on_main h1{
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/*Секция каьера*/
+
+.career{
+  height: 350vh;
+  margin-top:10%;
+}
+
+.G_Photo{
+  height:100%;
+  width: auto;
+}
+
+.teamoffices h1{
+  font-size: 26px;
+}
+
+.jobs{
+  width: 95%;
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(1,100%);
+  grid-template-rows: repeat(8,250px);
+  grid-gap: 10vh;
+  justify-content: center;
+  margin-top: 40%;
+}
+
+/*Секция каьера конец*/
+
+  /*Футер*/
+
+  .footer{
+    height: 72vh;
+    padding: 20px;
+    margin-top: 5%;
+  }
+
+  .Footer_main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .Footer_block{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .footer{
+    height: 80vh;
+  }
+}

@@ -1,0 +1,430 @@
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1024px) {
+  .nav{
+    width: 400px;
+  }
+
+  .point{
+    font-size: 12px;
+    margin: 4px;
+  }
+  .text_on_main{
+      width: 80%;
+      font-size: 12px;
+      text-align: center;
+      margin: 0 auto;
+  }
+
+  .text_on_main h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left:0%;
+  }
+
+  /*Секция что мы делаем*/
+
+  .occupation{
+    height:80vh;
+    width: 100%;
+    background: #161719;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+  }
+
+  .occ_title{
+    margin-bottom:40px;
+  }
+
+  .galary{
+    width: 80%;
+    height: 70%;
+    display: grid;
+    grid-template-columns:repeat(2,50%);
+    grid-template-rows: repeat(2,40%);
+    grid-gap: 4vw;
+  }
+  /*Секция что мы делаем конец*/
+  /*Почему мы*/
+
+  .headline{
+    font-size: 32px;
+    margin-bottom:80px;
+  }
+
+  .list{
+    justify-content: space-between;
+    align-items: end;
+    width:90%;
+  }
+
+  .l_img{
+    position: absolute;
+    height: auto;
+    width: 25px;
+    left: -2%;
+  }
+
+  /*Почему мы конец*/
+
+  .partners {
+    height: 70%;
+    width: 90%;
+    display: grid;
+    grid-template-columns:repeat(4,20%);
+    grid-template-rows: repeat(4,25%);
+    grid-gap: 3vw;
+    justify-content: center;
+  }
+
+  /*Контакты*/
+
+  .contact{
+    height: 130vh;
+    margin-top: 20px;
+  }
+
+  .form{
+    width: 95%;
+  }
+
+  .location{
+    margin-top: 80px;
+    width:90%;
+    flex-direction: column;
+  }
+  .L_text{
+    height: 60%;
+    width: 100%;
+  }
+
+  .L_map{
+    height: 80%;
+    width: 100%;
+    background: #EAEAEA;
+  }
+
+  /*Футер*/
+
+  .footer{
+    height: 38vh;
+    padding: 20px;
+  }
+
+  .Footer_main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  }
+
+  .Footer_block{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+/*Мобильное меню*/
+
+.header{
+  display: none;
+}
+
+.header.scrolling{
+  display: none;
+}
+.mobile_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 30px;
+    position: fixed;
+    right:0;
+    top: 103%;
+    margin-right: 25px;
+    z-index: 1000;
+    transition: all 0.7s ease;
+    filter: invert(100%);
+  }
+
+  .strip{
+    background: #000;
+    height: 15%;
+    width: 100%;
+    border-radius: 50px;
+  }
+
+  .mobile{
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background: #fff;
+    z-index: 100;
+    transition: all 0.7s ease;
+    transform: translateY(-100%);
+  }
+
+  .mobile a {
+    color: #000;
+    transition: all 0.7s ease;
+  }
+
+
+  .mobile .social{
+    filter: invert(0%);
+    transition: all 0.7s ease;
+  }
+
+  .m_logo{
+    width: 120px;
+    height: 120px;
+    background: url(../Img/M_logo.jpg) no-repeat center;
+    background-size:cover;
+    transition: all 0.7s ease;
+  }
+
+  .m_nav{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 500px;
+    height: 35%;
+    font-weight: bold;
+  }
+
+  .m_point{
+    font-weight: black;
+    font-size: 35px;
+    margin: 15px;
+    transition: all 0.7s ease;
+  }
+
+  .m_point:hover{
+    color: #81D742;
+  }
+
+  .m_social{
+    width: 660px;
+    text-align: center;}
+
+  .m_social img{
+    width: 25px;
+    margin: 5%;
+  }
+
+/*Мобильное меню конец*/
+  .headline{
+    font-size: 32px;
+    margin-bottom:80px;
+  }
+
+  .benefits{
+    height: 120vh;
+    width: 100%;
+  }
+
+  .list{
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width:90%;
+    height: 70%;
+  }
+
+  .l_points{
+    width: 60%;
+    margin: 60px;
+    padding-left: 0%;
+    text-align: center;
+  }
+
+  .l_img{
+    position: absolute;
+    height: auto;
+    width: 50px;
+    left: 50%;
+    top: -46%;
+    transform: translateX(-50%);
+  }
+
+  .clients{
+    margin-top: 4%;
+  }
+
+
+
+}
+
+@media screen and (max-width: 425px) {
+
+  .point{
+    font-weight: black;
+    font-size: 35px;
+    margin: 15px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .text_on_main{
+      width: 90%;
+      font-size: 12px;
+      text-align: center;
+  }
+
+  /*Секция что мы делаем*/
+
+  .occupation{
+    height: 170vh;
+    width: 100%;
+    background: #161719;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+  }
+
+  .occ_title{
+    margin-bottom:-70px;
+  }
+
+  .galary{
+    width: 90%;
+    height: 95%;
+    display: grid;
+    grid-template-columns:repeat(1,90%);
+    grid-template-rows: repeat(4,20%);
+    grid-gap: 6vw;
+    transform: translateY(10%);
+  }
+
+  /*Секция что мы делаем конец*/
+  /*Почему мы*/
+
+  .headline{
+    font-size: 32px;
+    margin-bottom:80px;
+  }
+
+  .benefits{
+    height: 1200px;
+    width: 100%;
+  }
+
+  .list{
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width:90%;
+    height: 70%;
+  }
+
+  .l_points{
+    width: 240px;
+    margin: 80px;
+    padding-left: 0%;
+    text-align: center;
+  }
+
+  .l_img{
+    position: absolute;
+    height: auto;
+    width: 50px;
+    left: 50%;
+    top: -38%;
+    transform: translateX(-50%);
+  }
+
+  /*Почему мы конец*/
+
+  .clients{
+    height: 1400px;
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  .partners {
+    height: 70%;
+    width: 90%;
+    display: grid;
+    grid-template-columns:repeat(2,45%);
+    grid-template-rows: repeat(8,100px);
+    grid-gap: 8vw;
+  }
+
+  .P_point {
+    height:auto; width:100%;
+  }
+
+
+  /*Контакты*/
+
+  .contact{
+    height: 1100px;
+    margin-top: 20px;
+  }
+
+  .form{
+    width: 95%;
+  }
+
+  .location{
+    margin-top: 80px;
+    width:95%;
+    height: 120vh;
+    flex-direction: column;
+  }
+
+  .L_text{
+    height: 60%;
+    width: 100%;
+  }
+
+  .L_map{
+    height: 80%;
+    width: 100%;
+    background: #EAEAEA;
+  }
+
+  /*Футер*/
+
+  .footer{
+    background: #141618;
+    height: 600px;
+    padding: 20px;
+    margin-top: 25%;
+  }
+
+  .Footer_main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .Footer_block{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}

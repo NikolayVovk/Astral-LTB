@@ -1,0 +1,196 @@
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Front-end JavaScript Developer</title>
+    <link rel="stylesheet" href="Css/Main.css">
+    <link rel="stylesheet" href="Css/Madia.css">
+    <link rel="stylesheet" href="Css/Main.js">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+<body>
+  <script type="text/javascript">
+  mobileMenuToggle = false;
+    $(function(){
+      $('a[href^="#"]').on('click', function(event) {
+      event.preventDefault();
+        var sc = $(this).attr("href"),
+            dn = $(sc).offset().top;
+      mobileMenuToggle = false;
+      document.getElementById("mobile").style.transform = "translateY(-94%)";
+      document.getElementById("mobilemenu").style.top = "96%";
+      $('html, body').animate({scrollTop: dn}, 1000);
+       });
+    });
+    $(window).scroll(function(){
+     if ($(window).scrollTop() > 10) {
+       document.getElementById("mobilemenu").style.filter = "invert(0%)";
+       document.getElementById("mobilemenu").style.top = "96%";
+       document.getElementById("mobile").style.transform = "translateY(-94%)"
+         $('.header').addClass('scrolling');
+    }
+    else {
+      document.getElementById("mobilemenu").style.filter = "invert(100%)";
+      document.getElementById("mobilemenu").style.top = "102%";
+      document.getElementById("mobile").style.transform = "translateY(-100%)"
+        $('.header').removeClass('scrolling')
+    }
+});
+    </script>
+  <!--Навигация-->
+<header class="header" id="header">
+   <div class="logo" alt=""></div>
+    <ul class="nav">
+      <li><a class="point" href="https://devalore.com/">HOME</a></li>
+      <li><a class="point" href="#services">SERVICES</a></li>
+      <li><a class="point" href="" >CAREER</a></li>
+      <li><a class="point" href="#contact_us">CONTACT US</a></li>
+    </ul>
+  <div class="social">
+    <a href=""><img src="Img/Facebook.png" alt="" ></a>
+    <a href=""><img src="Img/In.png" alt="" ></a>
+    <a href=""><img src="Img/Gitlab.png" alt=""></a>
+  </div>
+  <a type="button" name="button" class="up" href="#up">^</a>
+</header>
+<!--Навигация мобыльный-->
+<nav class="mobile" id="mobile">
+  <div class="m_logo" alt=""></div>
+   <ul class="m_nav">
+     <li><a class="m_point" href="https://devalore.com/">HOME</a></li>
+     <li><a class="m_point" href="#services">SERVICES</a></li>
+     <li><a class="m_point" href="" >CAREER</a></li>
+     <li><a class="m_point" href="#contact_us">CONTACT US</a></li>
+   </ul>
+ <div class="m_social">
+   <a href=""><img src="Img/Facebook.png" alt="" ></a>
+   <a href=""><img src="Img/In.png" alt="" ></a>
+   <a href=""><img src="Img/Gitlab.png" alt=""></a>
+ </div>
+ <a type="button" name="button" class="up" href="#up">^</a>
+ <div class="mobile_menu" id="mobilemenu">
+   <nav class="strip"></nav>
+   <nav class="strip"></nav>
+   <nav class="strip"></nav>
+ </div>
+</nav>
+<!--Навигация конец-->
+<!--Первая страничка-->
+ <section class="home_page" id='up'>
+   <div class="text_on_main">
+       <h1><strong>Front-end JavaScript Developer</strong></h1>
+       <p>(React)</p>
+   </div>
+ </section>
+<!--Первая страничка конец-->
+<!--Cтраничка девелоперы-->
+
+<section class="career">
+  <div class="job_about">
+     <h1 class="job_title"><strong>Front-end JavaScript Developer (React)</strong></h1>
+     <br>
+     <p>We are looking for a great JavaScript developer who is proficient with React.js.
+       Your primary focus will be on developing user interface components and implementing those following well-known React.js workflows (such as Flux or Redux).
+       You will ensure that these components and the overall application are robust and easy to maintain. You will coordinate with the rest of the team working on different layers of the infrastructure.
+       Therefore, a commitment to collaborative problem solving, sophisticated design, and quality product are important.</p>
+     <h2 class="job_stitle"><strong>Responsibilities</strong></h2>
+       <ul>
+         <li>Developing new user-facing features using React.js</li>
+         <li>Building reusable components and front-end libraries for future use</li>
+         <li>Developing new user-facing features using React.js</li>
+         <li>Building reusable components and front-end libraries for future use</li>
+         <li>Translating designs and wireframes into high-quality code</li>
+         <li>Optimizing components for maximum performance across a vast array of web-capable devices and browsers</li>
+       </ul>
+      <h2 class="job_stitle"><strong>Skills</strong></h2>
+       <ul>
+         <li>Strong proficiency in JavaScript, including DOM manipulation and the JavaScript object model</li>
+         <li>Thorough understanding of React.js and its core principles</li>
+         <li>  Experience with popular React.js workflows (such as Flux or Redux)</li>
+         <li>  Familiarity with newer specifications of ECMAScript</li>
+         <li>  Experience with data structure libraries (e.g., Immutable.js)</li>
+         <li>  Knowledge of isomorphic React is a plus</li>
+         <li>  Familiarity with RESTful APIs</li>
+         <li>  Knowledge of modern authorization mechanisms, such as JSON Web Token</li>
+         <li>  Familiarity with modern front-end build pipelines and tools</li>
+         <li>  Experience with common front-end development tools such as Babel, Web pack, NPM, etc.</li>
+         <li>  Ability to understand business requirements and translate them into technical requirements</li>
+         <li>  A knack for benchmarking and optimization</li>
+       </ul>
+  </div>
+  <div class="contact">
+    <h1 class="form_title">Start your journey with us</h1>
+    <p>Send Your CV</p>
+    <form class="form" action="index.html" method="post">
+        <input type="text" name="text" placeholder="Name" class="form_input">
+        <input type="email" name="email" placeholder="Email"  class="form_input">
+        <input type="email" name="email" placeholder="Phone Number"  class="form_input">
+        <p><strong>Position Number: 3888</strong></p>
+               <input id="form_file" type="file" name="file">
+        <p><strong>Attach your CV</strong></p>
+      <input type="submit" value="SEND" class="form_buttom">
+      <p>All of the positions are intended for both women and men.</p>
+    </form>
+
+  </div>
+</section>
+
+
+
+<!--Cтраничка  девелоперы конец-->
+<!--Контакты конец-->
+<footer class="footer">
+  <div class="Footer_main">
+    <div class="Footer_block">
+      <h3>About Us</h3>
+      <br/>
+      <br/>
+      <p>Devalore Ltd., established in 2010, provides software development services in
+         four major areas: Web Applications, Mobile Applications, RT/Embedded and VLSI.</p>
+    </div>
+    <div class="Footer_block">
+      <h3>R&D Center</h3>
+      <br/>
+      <br/>
+      <p>Ofer Industrial Park , Building: Alon – A</p><br/>
+      <p>Em Hamoshavot St 94,</p>
+      <p>Petah Tikva</p>
+    </div>
+    <div class="Footer_block">
+      <h3>CAREER</h3>
+      <br/>
+      <br/>
+      <p>Devalore leads the market by adopting innovative technologies if you’re
+      looking to upgrade your knowledge, and keep up to date. Your place is with us!</p>
+      <br/>
+    <a style="color:#81D742; font-weight:bold;" href=""><small>contact@devalore.com</small></a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+mobileMenuToggle = false;
+  document.getElementById("mobilemenu").onclick = function(){
+    if (mobileMenuToggle){
+      mobileMenuToggle = false;
+    document.getElementById("mobile").style.transform = "translateY(-100%)";
+    document.getElementById("mobile").style.opacity = "1";
+    document.getElementById("mobilemenu").style.top = "102%";
+    document.getElementById("mobilemenu").style.filter = "invert(100%)"}
+    else {
+      mobileMenuToggle = true;
+    document.getElementById("mobile").style.transform = "translateY(0%)";
+    document.getElementById("mobile").style.opacity = "1";
+    document.getElementById("mobilemenu").style.top = "4%";
+    document.getElementById("mobilemenu").style.filter = "invert(0%)";
+    }
+  };
+</script>
+
+</body>
